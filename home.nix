@@ -35,7 +35,6 @@
     userEmail = "54673768+jofaul@users.noreply.github.com";
     extraConfig = {
       init.defaultBranch = "main";
-      safe.directory = "/etc/nixos";
       safe.directory = "/home/jonathan/.dotfiles";
     };
   };
