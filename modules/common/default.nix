@@ -13,6 +13,8 @@ in
   };
 
   config = lib.mkIf cfg.enable {
+    programs.zsh.enable = true;
+    
     jofaul = {
       locale.enable = true;
       nix-common.enable = true;
