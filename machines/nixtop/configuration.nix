@@ -33,8 +33,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.initrd.luks.devices."luks-7d06495d-f922-4784-9f24-8a75c405677b".device = "/dev/disk/by-uuid/7d06495d-f922-4784-9f24-8a75c405677b";
-
   networking = {
     networkmanager = {
       enable = true;

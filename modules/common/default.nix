@@ -13,8 +13,6 @@ in
   };
 
   config = lib.mkIf cfg.enable {
-    programs.bash.enable = true;
-
     jofaul = {
       locale.enable = true;
       nix-common.enable = true;
