@@ -51,7 +51,7 @@ in
     dconf.settings = {
       "org/gnome/shell" = {
         favorite-apps = [
-          "zen.desktop"
+          "firefox.desktop"
           "code.desktop"
           (
             #if config.paul.programs.ghostty.enable then "com.mitchellh.ghostty.desktop" else
