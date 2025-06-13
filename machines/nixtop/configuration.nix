@@ -12,7 +12,7 @@
 {
   jofaul = {
     common-desktop.enable = true;
-    #gnome.enable = true;
+    gnome.enable = true;
     #nvidia = {
     #  enable = true;
     #  laptop = true;
@@ -20,7 +20,7 @@
     #grub.enable = true;
     #syncthing.enable = true;
     #adb.enable = true;
-    # docker.enable = true;
+    docker.enable = true;
     gaming.enable = true;
   };
 

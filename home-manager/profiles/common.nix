@@ -6,7 +6,7 @@
   config = {
 
     jofaul = {
-      # programs.direnv.enable = true;
+      programs.direnv.enable = true;
       programs.git.enable = true;
       # programs.ssh.enable = true;
       programs.zsh.enable = true;
