@@ -46,7 +46,7 @@
     mayniklas = {
       url = "github:MayNiklas/nixos";
       inputs = {
-        disko.follows = "disko";
+        # disko.follows = "disko";
         home-manager.follows = "home-manager";
         nixos-hardware.follows = "nixos-hardware";
         nixpkgs.follows = "nixpkgs";
