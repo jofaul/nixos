@@ -25,7 +25,6 @@ in
       };
       userEmail = "54673768+jofaul@users.noreply.github.com";
       userName = "jofaul";
-      safe.directory = "/home/jonathan/.dotfiles";
     };
 
     home.packages = with pkgs; [
