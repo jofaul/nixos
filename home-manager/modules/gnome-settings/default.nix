@@ -78,7 +78,7 @@ in
       "org/gnome/desktop/interface" = {
         accent-color = "yellow";
         gtk-enable-primary-paste = false;
-        monospace-font-name = lib.mkIf system-config.paul.fonts.enable "MesloLGS NF 10";
+        monospace-font-name = lib.mkIf system-config.jofaul.fonts.enable "MesloLGS NF 10";
         show-battery-percentage = true;
         enable-hot-corners = false;
         clock-show-weekday = true;
