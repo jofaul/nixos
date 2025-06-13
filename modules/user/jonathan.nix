@@ -5,7 +5,7 @@
   ...
 }:
 let
-  cfg = config.jofaul.user.paulmiro;
+  cfg = config.jofaul.user.jonathan;
 in
 {
   options.jofaul.user.jonathan = {
