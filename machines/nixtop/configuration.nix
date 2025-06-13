@@ -5,7 +5,7 @@
 { config, pkgs, ... }:
 
 {
-  jonathan = {
+  jofaul = {
     common-desktop.enable = true;
     #gnome.enable = true;
     #nvidia = {
@@ -65,17 +65,7 @@
   # Enable touchpad support (enabled default in most desktopManager).
   services.xserver.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.jonathan = {
-    isNormalUser = true;
-    description = "Jonathan";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      # thunderbird
-    ];
-  };
-
-    # disable NetworkManager wait-online
+  # disable NetworkManager wait-online
   # https://github.com/NixOS/nixpkgs/issues/180175
   systemd.services.NetworkManager-wait-online.enable = pkgs.lib.mkForce false;
   systemd.services.systemd-networkd-wait-online.enable = pkgs.lib.mkForce false;

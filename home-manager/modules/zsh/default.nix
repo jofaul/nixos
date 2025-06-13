@@ -5,15 +5,15 @@
   ...
 }:
 let
-  cfg = config.jonathan.programs.zsh;
+  cfg = config.jofaul.programs.zsh;
 in
 {
-  options.jonathan.programs.zsh = {
+  options.jofaul.programs.zsh = {
     enable = lib.mkEnableOption "enable zsh configuration";
   };
 
   config = lib.mkIf cfg.enable {
-    jonathan.programs.starship.enable = true;
+    jofaul.programs.starship.enable = true;
 
     home.shell.enableZshIntegration = true;
 

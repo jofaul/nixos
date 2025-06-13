@@ -5,16 +5,16 @@
   ...
 }:
 let
-  cfg = config.jonathan.user.paulmiro;
+  cfg = config.jofaul.user.paulmiro;
 in
 {
-  options.jonathan.user.jofaul = {
+  options.jofaul.user.jonathan = {
     enable = lib.mkEnableOption "activate user jofaul";
   };
 
   config = lib.mkIf cfg.enable {
     # Define a user account. Don't forget to set a password with ‘passwd’.
-    users.users.jofaul = {
+    users.users.jonathan = {
       isNormalUser = true;
       description = "Jonathan";
       extraGroups = [
@@ -26,7 +26,7 @@ in
     };
 
     nix.settings = {
-      allowed-users = [ "jofaul" ];
+      allowed-users = [ "jonathan" ];
     };
   };
 }

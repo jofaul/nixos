@@ -6,19 +6,19 @@
   ...
 }:
 let
-  cfg = config.jonathan.common-desktop;
+  cfg = config.jofaul.common-desktop;
 in
 {
   imports = [
     home-manager.nixosModules.home-manager
   ];
 
-  options.jonathan.common-desktop = {
+  options.jofaul.common-desktop = {
     enable = lib.mkEnableOption "contains configuration that is common to all systems with a desktop environment";
   };
 
   config = lib.mkIf cfg.enable {
-    jonathan = {
+    jofaul = {
       common.enable = true;
       sound.enable = true;
       fonts.enable = true;
@@ -38,7 +38,7 @@ in
         # so we can access it's values for conditional statements
         system-config = config;
       };
-      users.jofaul = flake-self.homeConfigurations.desktop;
+      users.jonathan = flake-self.homeConfigurations.desktop;
       users.root = flake-self.homeConfigurations.server;
     };
   };

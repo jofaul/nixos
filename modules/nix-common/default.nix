@@ -6,10 +6,10 @@
   ...
 }:
 let
-  cfg = config.jonathan.nix-common;
+  cfg = config.jofaul.nix-common;
 in
 {
-  options.jonathan.nix-common = {
+  options.jofaul.nix-common = {
     enable = lib.mkEnableOption "activate nix-common";
     disable-cache = lib.mkEnableOption "not use binary-cache";
   };

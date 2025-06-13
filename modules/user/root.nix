@@ -4,10 +4,10 @@
   ...
 }:
 let
-  cfg = config.jonathan.user.root;
+  cfg = config.jofaul.user.root;
 in
 {
-  options.jonathan.user.root = {
+  options.jofaul.user.root = {
     enable = lib.mkEnableOption "activate user root";
   };
 

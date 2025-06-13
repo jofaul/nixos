@@ -5,10 +5,10 @@
   ...
 }:
 let
-  cfg = config.jonathan.fonts;
+  cfg = config.jofaul.fonts;
 in
 {
-  options.jonathan.fonts = {
+  options.jofaul.fonts = {
     enable = lib.mkEnableOption "activate fonts";
   };
 

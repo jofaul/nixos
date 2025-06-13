@@ -4,10 +4,10 @@
   ...
 }:
 let
-  cfg = config.jonathan.locale;
+  cfg = config.jofaul.locale;
 in
 {
-  options.jonathan.locale = {
+  options.jofaul.locale = {
     enable = lib.mkEnableOption "activate locale";
     hardwareClockInLocalTime = lib.mkOption {
       type = lib.types.bool;

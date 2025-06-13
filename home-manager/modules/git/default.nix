@@ -5,10 +5,10 @@
   ...
 }:
 let
-  cfg = config.jonathan.programs.git;
+  cfg = config.jofaul.programs.git;
 in
 {
-  options.jonathan.programs.git = {
+  options.jofaul.programs.git = {
     enable = lib.mkEnableOption "enable git";
   };
 

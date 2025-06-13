@@ -5,7 +5,7 @@
 {
   config = {
 
-    jonathan = {
+    jofaul = {
       # programs.direnv.enable = true;
       programs.git.enable = true;
       # programs.ssh.enable = true;

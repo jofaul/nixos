@@ -5,22 +5,22 @@
   ...
 }:
 let
-  cfg = config.jonathan.common;
+  cfg = config.jofaul.common;
 in
 {
-  options.jonathan.common = {
+  options.jofaul.common = {
     enable = lib.mkEnableOption "contains configuration that is common to all systems";
   };
 
   config = lib.mkIf cfg.enable {
     programs.bash.enable = true;
 
-    jonathan = {
+    jofaul = {
       locale.enable = true;
       nix-common.enable = true;
     #   openssh.enable = true;
       user = {
-        jofaul.enable = true;
+        jonathan.enable = true;
         root.enable = true;
       };
     };

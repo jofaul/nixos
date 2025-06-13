@@ -4,10 +4,10 @@
   ...
 }:
 let
-  cfg = config.jonathan.sound;
+  cfg = config.jofaul.sound;
 in
 {
-  options.jonathan.sound = {
+  options.jofaul.sound = {
     enable = lib.mkEnableOption "activate sound";
   };
 

@@ -4,10 +4,10 @@
   ...
 }:
 let
-  cfg = config.jonathan.openssh;
+  cfg = config.jofaul.openssh;
 in
 {
-  options.jonathan.openssh = {
+  options.jofaul.openssh = {
     enable = lib.mkEnableOption "activate openssh";
   };
 

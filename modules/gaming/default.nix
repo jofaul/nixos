@@ -5,10 +5,10 @@
   ...
 }:
 let
-  cfg = config.jonathan.gaming;
+  cfg = config.jofaul.gaming;
 in
 {
-  options.jonathan.gaming = {
+  options.jofaul.gaming = {
     enable = lib.mkEnableOption "activate gaming programs and options";
   };
 
