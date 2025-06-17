@@ -22,10 +22,10 @@ in
       enableExtensionUpdateCheck = false;
       enableUpdateCheck = false;
 
-      https://rycee.gitlab.io/home-manager/options.html#opt-programs.vscode.keybindings
+      # https://rycee.gitlab.io/home-manager/options.html#opt-programs.vscode.keybindings
       keybindings = [ ];
 
-      ~/.config/Code/User/settings.json
+      # ~/.config/Code/User/settings.json
       userSettings = {
         # privacy
         "telemetry.telemetryLevel" = "off";
