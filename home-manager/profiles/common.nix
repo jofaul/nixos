@@ -8,9 +8,7 @@
     jofaul = {
       programs.direnv.enable = true;
       programs.git.enable = true;
-      # programs.ssh.enable = true;
       programs.zsh.enable = true;
-      # programs.rbw.enable = true;
       nixpkgs-config.enable = true;
     };
 
@@ -24,26 +22,24 @@
 
     # Install these packages for my user
     home.packages = with pkgs; [
-      asciinema
-      croc
+      asciinema # share terminal sessions
+      croc # send files
       dnsutils
-      glances
-      neofetch
-      nil
-      nix-tree
+      glances # cooler htop
+      neofetch # hardware specs
+      nil # nix language server
+      nix-tree # browse nix dependencies
       nixfmt-rfc-style # TODO: change to "nixfmt" once it is replaced
       openssl
-      psmisc
-      pwgen
       ripgrep
-      tmux
+      # tmux # zellij but older
       unixtools.xxd
       unzip
       usbutils
-      zellij
+      zellij # tmux but cooler
     ];
 
-    programs.yazi.enable = true;
+    programs.yazi.enable = true; # file manager but duck
 
     # Let Home Manager install and manage itself.
     programs.home-manager.enable = true;
