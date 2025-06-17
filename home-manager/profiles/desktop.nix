@@ -13,6 +13,7 @@
       programs.ghostty.enable = true;
 
       programs.development = {
+        # dont rly need any of these but whatev
         android = true;
         c_cpp = true;
         go = true;
@@ -36,36 +37,29 @@
         anki
         audacity
         discord
-        element-desktop
-        gnome-graphs
-        gparted
-        inkscape
+        gnome-graphs # plot data
+        gparted # disk stuff manager
+        inkscape # vector graphic editor
         jellyfin-mpv-shim
-        krita
+        krita # painting (gimp?)
         libreoffice
-        mattermost-desktop
-        mixxx
+        # mattermost-desktop # some coding shit that i dont know a server for
+        # mixxx # dj app
         mpv
         obs-studio
         obsidian
-        oneko
-        onlyoffice-bin
-        pomodoro-gtk
-        prusa-slicer
-        orca-slicer
-        rnote
+        oneko # very important
+        onlyoffice-bin # libreoffice but weird
         signal-desktop
-        sl
+        sl # also important
         spotify
-        switcheroo
-        textpieces
+        switcheroo # convert imagetypes
+        textpieces # checksums and shit idk
         thunderbird-bin
         tor-browser
         ungoogled-chromium
         whatsapp-for-linux
         vdhcoapp
-        xournalpp
-        zoom-us
         firefox
       ]
       # only install these packages on x86_64-linux systems
