@@ -170,5 +170,16 @@
         }) (builtins.attrNames (builtins.readDir ./home-manager/modules))
       );
 
+      # In case I ever want to use direnv here, no reason for now
+      # devShells = forAllSystems (
+      #   system: with nixpkgsFor.${system}; {
+      #     default = pkgs.mkShell {
+      #       packages = [
+      #         # none for now
+      #       ];
+      #     };
+      #   }
+      # );
+
     };
 }
