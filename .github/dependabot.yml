@@ -10,4 +10,4 @@ updates:
     reviewers:
       - "jofaul"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
