@@ -20,7 +20,7 @@ in
           builtins.readFile (
             pkgs.fetchurl {
               url = "https://starship.rs/presets/toml/no-runtime-versions.toml";
-              hash = "sha256-eUOdNK/941Kf5frs6G2TntRAcAisN8v1PrbVGMP11oY=";
+              hash = "sha256-1fiJrhe7UrfgLfaNzsQ5UDwZmn4Dcct8+lasvmIbzE8=";
             }
           )
         ))
