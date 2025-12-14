@@ -21,7 +21,7 @@ in
       enable = true;
       autosuggestion.enable = true;
       enableCompletion = true;
-      dotDir = "$HOME/.config/zsh";
+      dotDir = "~/.config/zsh";
 
       sessionVariables = {
         ZDOTDIR = "$HOME/.config/zsh";
