@@ -20,11 +20,11 @@ in
         ".vscode/"
         ".idea/"
       ];
-      extraConfig = {
+      settings = {
         pull.rebase = false;
+        user.email = "54673768+jofaul@users.noreply.github.com";
+        user.name = "jofaul";
       };
-      userEmail = "54673768+jofaul@users.noreply.github.com";
-      userName = "jofaul";
     };
 
     home.packages = with pkgs; [
