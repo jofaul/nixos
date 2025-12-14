@@ -49,7 +49,7 @@
         obs-studio
         obsidian
         oneko # very important
-        onlyoffice-bin # libreoffice but weird
+        onlyoffice-desktopeditors # libreoffice but weird
         signal-desktop
         sl # also important
         spotify

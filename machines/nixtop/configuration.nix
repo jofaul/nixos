@@ -15,7 +15,8 @@
     gnome.enable = true;
     #grub.enable = true;
     #syncthing.enable = true;
-    adb.enable = true;
+    # enable this if adb is needed besides android studio
+    #adb.enable = true;
     docker.enable = true;
     gaming.enable = true;
   };
