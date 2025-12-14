@@ -13,8 +13,6 @@ in
   };
 
   config = lib.mkIf cfg.enable {
-    # jofaul.programs.starship.enable = true;
-
     home.shell.enableZshIntegration = true;
 
     programs.zsh = {
