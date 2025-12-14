@@ -28,18 +28,6 @@
       url = "github:numtide/flake-utils";
     };
 
-    ### Tools for managing NixOS
-
-    # lollypops deployment tool
-    # https://github.com/pinpox/lollypops
-    lollypops = {
-      url = "github:pinpox/lollypops";
-      inputs = {
-        flake-utils.follows = "flake-utils";
-        nixpkgs.follows = "nixpkgs";
-      };
-    };
-
     ### Packages outside of nixpkgs
 
     # MayNiklas - used for build_outputs

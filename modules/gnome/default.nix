@@ -21,7 +21,7 @@ in
     services.displayManager.defaultSession = "gnome"; # this forces gnome to run with wayland instead of x11
     # services.xserver.displayManager.sddm.enable = true;
 
-    services.xserver.desktopManager.gnome.enable = true;
+    services.desktopManager.gnome.enable = true;
     environment.gnome.excludePackages = (
       with pkgs;
       [
