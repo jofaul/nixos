@@ -58,7 +58,7 @@
         thunderbird-bin
         tor-browser
         ungoogled-chromium
-        whatsapp-for-linux
+        wasistlos
         vdhcoapp
         firefox
       ]
