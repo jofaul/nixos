@@ -9,7 +9,7 @@ let
 in
 {
   options.jofaul.user.jonathan = {
-    enable = lib.mkEnableOption "activate user jofaul";
+    enable = lib.mkEnableOption "activate user jonathan";
   };
 
   config = lib.mkIf cfg.enable {
