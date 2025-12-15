@@ -30,40 +30,10 @@ in
         android-tools
       ];
     })
-    (lib.mkIf cfg.c_cpp {
-      home.packages = with pkgs; [
-        clang
-        cmake
-      ];
-    })
-    (lib.mkIf cfg.go {
-      programs.go = {
-        enable = true;
-        # https://rycee.gitlab.io/home-manager/options.html#opt-programs.go.packages
-        packages = { };
-      };
-    })
-    (lib.mkIf cfg.godot {
-      home.packages = with pkgs; [
-        godot_4
-      ];
-    })
     (lib.mkIf cfg.java {
       home.packages = with pkgs; [
+        intellij
         jdk21
-      ];
-    })
-    (lib.mkIf cfg.javascript {
-      home.packages = with pkgs; [
-        bun
-        nodejs
-        nodePackages.pnpm
-      ];
-    })
-    (lib.mkIf cfg.lua {
-      home.packages = with pkgs; [
-        lua
-        stylua
       ];
     })
     (lib.mkIf cfg.python {

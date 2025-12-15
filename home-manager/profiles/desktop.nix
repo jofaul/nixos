@@ -13,13 +13,9 @@
       programs.ghostty.enable = true;
 
       programs.development = {
-        # dont rly need any of these but whatev
         android = true;
+        java = true;
         python = true;
-        c_cpp = false;
-        go = false;
-        godot = false;
-        javascript = false;
       };
     };
 
