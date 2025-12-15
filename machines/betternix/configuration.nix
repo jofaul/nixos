@@ -18,6 +18,7 @@
     adb.enable = true;
     docker.enable = true;
     gaming.enable = true;
+    work.enable = true;
   };
   
   imports =
