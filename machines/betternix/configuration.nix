@@ -16,6 +16,7 @@
     adb.enable = true;
     docker.enable = true;
     work.enable = true;
+    trusted-certificates.enable = true;
   };
   
   imports =

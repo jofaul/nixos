@@ -30,23 +30,9 @@
 
     ### Packages outside of nixpkgs
 
-    # MayNiklas - used for build_outputs
-    mayniklas = {
-      url = "github:MayNiklas/nixos";
-      inputs = {
-        # disko.follows = "disko";
-        home-manager.follows = "home-manager";
-        nixos-hardware.follows = "nixos-hardware";
-        nixpkgs.follows = "nixpkgs";
-      };
-    };
-
-    authentik-nix = {
-      url = "github:nix-community/authentik-nix";
-
-      ## optional overrides. Note that using a different version of nixpkgs can cause issues, especially with python dependencies
-      # inputs.nixpkgs.follows = "nixpkgs"
-      # inputs.flake-parts.follows = "flake-parts"
+    zen-browser = {
+      url = "github:youwen5/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
   };

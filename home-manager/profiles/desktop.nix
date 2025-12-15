@@ -30,7 +30,6 @@
     home.packages =
       with pkgs;
       [
-        anki
         audacity
         discord
         gnome-graphs # plot data
@@ -42,7 +41,6 @@
         # mattermost-desktop # some coding shit that i dont know a server for
         # mixxx # dj app
         mpv
-        obs-studio
         obsidian
         oneko # very important
         onlyoffice-desktopeditors # libreoffice but weird
@@ -57,6 +55,8 @@
         wasistlos
         vdhcoapp
         firefox
+        # cooked ahh notation
+        flake-self.inputs.zen-browser.packages.${stdenv.hostPlatform.system}.default
       ]
       # only install these packages on x86_64-linux systems
       ++ lib.optionals (system-config.nixpkgs.hostPlatform.isx86_64) [

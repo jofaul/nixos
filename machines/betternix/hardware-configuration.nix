@@ -24,6 +24,11 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
+  fileSystems."/mnt/windows" = 
+    { device = "/dev/disk/by-uuid/4AC6B92FC6B91BDF";
+      fsType = "ntfs";
+    };
+
   swapDevices = [ ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
