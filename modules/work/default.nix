@@ -22,6 +22,8 @@ in
       ];
     };
 
-    
+    #azure-vpn
+    #teams? outlook? ew
+    #also mount disk
   };
 }
