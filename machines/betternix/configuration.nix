@@ -13,11 +13,8 @@
   jofaul = {
     common-desktop.enable = true;
     gnome.enable = true;
-    #grub.enable = true;
-    #syncthing.enable = true;
     adb.enable = true;
     docker.enable = true;
-    gaming.enable = true;
     work.enable = true;
   };
   

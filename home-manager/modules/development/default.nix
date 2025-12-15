@@ -32,7 +32,7 @@ in
     })
     (lib.mkIf cfg.java {
       home.packages = with pkgs; [
-        intellij
+        jetbrains.idea-community-bin
         jdk21
       ];
     })
