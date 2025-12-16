@@ -18,7 +18,7 @@ in
     jofaul = {
       locale.enable = true;
       nix-common.enable = true;
-    #   openssh.enable = true;
+      openssh.enable = true;
       user = {
         jonathan.enable = true;
         root.enable = true;
@@ -26,7 +26,7 @@ in
     };
 
     environment.systemPackages = with pkgs; [
-      #dnsutils
+      dnsutils
       git
       wget
     ];
