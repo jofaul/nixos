@@ -31,7 +31,7 @@
       enable = true;
       plugins = with pkgs; [ networkmanager-openvpn ];
     };
-    hostName = "betternix";
+    hostName = "betternixtop";
   };
 
   # Enable the X11 windowing system.
