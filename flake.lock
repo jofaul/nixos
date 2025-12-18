@@ -1,5 +1,25 @@
 {
   "nodes": {
+    "betternix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1766053463,
+        "narHash": "sha256-5wha/jQBlMNzKwDpskk5cIGYqS4PNDwdVzZv/nNo0Tg=",
+        "owner": "paulmiro",
+        "repo": "betternix",
+        "rev": "8ec7c69131b4f0f4f95cc661bff4a151f442dc9f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paulmiro",
+        "repo": "betternix",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -73,11 +93,33 @@
     },
     "root": {
       "inputs": {
+        "betternix": "betternix",
         "flake-utils": "flake-utils",
         "home-manager": "home-manager",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs",
+        "sops-nix": "sops-nix",
         "zen-browser": "zen-browser"
+      }
+    },
+    "sops-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1765836173,
+        "narHash": "sha256-hWRYfdH2ONI7HXbqZqW8Q1y9IRbnXWvtvt/ONZovSNY=",
+        "owner": "Mic92",
+        "repo": "sops-nix",
+        "rev": "443a7f2e7e118c4fc63b7fae05ab3080dd0e5c63",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Mic92",
+        "repo": "sops-nix",
+        "type": "github"
       }
     },
     "systems": {

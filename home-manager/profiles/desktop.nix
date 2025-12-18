@@ -12,6 +12,8 @@
       programs.vscode.enable = true;
       programs.ghostty.enable = true;
 
+      work.enable = true;
+
       programs.development = {
         android = true;
         java = true;

@@ -4,11 +4,10 @@
 
 { self, ... }:
 {
-  config,
+  betternix,
   pkgs,
   ...
 }:
-
 {
   jofaul = {
     common-desktop.enable = true;
@@ -18,11 +17,19 @@
     work.enable = true;
     trusted-certificates.enable = true;
   };
-  
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+
+  betternix = {
+    hosts.enable = true;
+    # postgresql.enable = true;
+    # rabbitmq.enable = true;
+    trusted-certificates.enable = true;
+  };
+
+  imports = [
+    betternix.nixosModules.default
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

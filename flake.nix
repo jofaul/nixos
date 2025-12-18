@@ -22,6 +22,19 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # secrets management
+    # https://github.com/Mic92/sops-nix
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # Work stuff
+    betternix = {
+      url = "github:paulmiro/betternix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Pure Nix flake utility functions
     # https://github.com/numtide/flake-utils
     flake-utils = {
@@ -100,6 +113,8 @@
             } // inputs;
 
             modules = [
+              sops-nix.nixosModules.sops
+              betternix.nixosModules.default
               (import "${./.}/machines/${x}/configuration.nix" { inherit self; })
               { imports = builtins.attrValues self.nixosModules; }
             ];
