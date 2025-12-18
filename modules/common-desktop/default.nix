@@ -37,7 +37,8 @@ in
         # Pass system configuration (top-level "config") to home-manager modules,
         # so we can access it's values for conditional statements
         system-config = config;
-      };
+      }
+      // flake-self.inputs;
       users.jonathan = flake-self.homeConfigurations.desktop;
       users.root = flake-self.homeConfigurations.server;
     };

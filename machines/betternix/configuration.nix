@@ -4,7 +4,6 @@
 
 { self, ... }:
 {
-  betternix,
   pkgs,
   ...
 }:
@@ -15,18 +14,9 @@
     adb.enable = true;
     docker.enable = true;
     work.enable = true;
-    trusted-certificates.enable = true;
-  };
-
-  betternix = {
-    hosts.enable = true;
-    # postgresql.enable = true;
-    # rabbitmq.enable = true;
-    trusted-certificates.enable = true;
   };
 
   imports = [
-    betternix.nixosModules.default
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
   ];
@@ -83,7 +73,10 @@
   nixpkgs.config.allowUnfree = true;
 
   # Activate Flakes
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget

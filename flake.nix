@@ -113,8 +113,6 @@
             } // inputs;
 
             modules = [
-              sops-nix.nixosModules.sops
-              betternix.nixosModules.default
               (import "${./.}/machines/${x}/configuration.nix" { inherit self; })
               { imports = builtins.attrValues self.nixosModules; }
             ];

@@ -1,8 +1,8 @@
 {
-  flake-self,
   lib,
   pkgs,
   system-config,
+  zen-browser,
   ...
 }:
 {
@@ -58,7 +58,7 @@
         vdhcoapp
         firefox
         # cooked ahh notation
-        flake-self.inputs.zen-browser.packages.${stdenv.hostPlatform.system}.default
+        zen-browser.packages.${stdenv.hostPlatform.system}.default
       ]
       # only install these packages on x86_64-linux systems
       ++ lib.optionals (system-config.nixpkgs.hostPlatform.isx86_64) [

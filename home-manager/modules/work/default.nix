@@ -5,14 +5,14 @@
   ...
 }:
 let
-  cfg = config.paul.work;
+  cfg = config.jofaul.work;
 in
 {
   imports = [
     betternix.homeModules.default
   ];
 
-  options.paul.work = {
+  options.jofaul.work = {
     enable = lib.mkEnableOption "enable work stuff";
   };
 
