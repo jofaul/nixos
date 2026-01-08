@@ -129,6 +129,8 @@ in
       # keybindings
       "org/gnome/shell/keybindings" = {
         toggle-message-tray = [ "<Super>w" ]; # defaults to <Super>v, but i need that for the clipboard-indicator
+        switch-to-workspace-left = ["<Super>Page_Up" "<Super>KP_Prior" "<Super><Alt>Left"];
+        switch-to-workspace-right = ["<Super>Page_Down" "<Super>KP_Next" "<Super><Alt>Right"];
       };
 
       # extension settings
