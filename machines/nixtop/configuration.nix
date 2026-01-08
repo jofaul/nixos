@@ -13,8 +13,6 @@
   jofaul = {
     common-desktop.enable = true;
     gnome.enable = true;
-    # enable this if adb is needed besides android studio
-    #adb.enable = true;
     docker.enable = true;
     gaming.enable = true;
   };

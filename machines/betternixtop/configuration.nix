@@ -11,7 +11,6 @@
   jofaul = {
     common-desktop.enable = true;
     gnome.enable = true;
-    adb.enable = true;
     docker.enable = true;
     work.enable = true;
   };
