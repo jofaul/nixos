@@ -69,7 +69,7 @@
     in
     {
 
-      formatter = forAllSystems (system: nixpkgsFor.${system}.nixfmt-rfc-style); # TODO: change to "nixfmt" once it is replaced
+      formatter = forAllSystems (system: nixpkgsFor.${system}.nixfmt); # TODO: change to "nixfmt" once it is replaced
 
       packages = forAllSystems (
         system:

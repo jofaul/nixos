@@ -29,7 +29,7 @@
       neofetch # hardware specs
       nil # nix language server
       nix-tree # browse nix dependencies
-      nixfmt-rfc-style # TODO: change to "nixfmt" once it is replaced
+      nixfmt # TODO: change to "nixfmt" once it is replaced
       openssl
       ripgrep
       # tmux # zellij but older

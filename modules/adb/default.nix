@@ -12,7 +12,6 @@ in
   };
 
   config = lib.mkIf cfg.enable {
-    programs.adb.enable = true;
     users.users.jonathan.extraGroups = [ "adbusers" ];
     networking.firewall.allowedTCPPorts = [ 8081 ];
     networking.firewall.allowedUDPPorts = [ 8081 ];
