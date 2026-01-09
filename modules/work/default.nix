@@ -37,7 +37,5 @@ in
       JAVA_HOME = "/etc/static/bettertec/jdk_21";
       GRADLE_LOCAL_JAVA_HOME = "/etc/static/bettertec/jdk_21";
     };
-
-    #azure-vpn - ssh only?
   };
 }
