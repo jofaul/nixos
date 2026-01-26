@@ -18,5 +18,6 @@ in
 
   config = lib.mkIf cfg.enable {
     betternix.ssh.enable = true;
+    betternix.packages.enable = true;
   };
 }
