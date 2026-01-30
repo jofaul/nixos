@@ -55,7 +55,6 @@
         tor-browser
         ungoogled-chromium
         wasistlos
-        vdhcoapp
         firefox
         # cooked ahh notation
         zen-browser.packages.${stdenv.hostPlatform.system}.default

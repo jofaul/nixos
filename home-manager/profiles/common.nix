@@ -9,7 +9,10 @@
       programs.direnv.enable = true;
       programs.git.enable = true;
       programs.zsh.enable = true;
+      
       nixpkgs-config.enable = true;
+
+      ssh.enable = true;
     };
 
     # Home-manager nixpkgs config
