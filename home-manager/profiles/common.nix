@@ -29,7 +29,7 @@
       croc # send files
       dnsutils
       glances # cooler htop
-      neofetch # hardware specs
+      fastfetch # hardware specs
       nil # nix language server
       nix-tree # browse nix dependencies
       nixfmt # TODO: change to "nixfmt" once it is replaced

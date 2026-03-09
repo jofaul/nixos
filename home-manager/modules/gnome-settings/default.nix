@@ -17,7 +17,6 @@ in
       gnomeExtensions.activate_gnome
       gnomeExtensions.blur-my-shell
       gnomeExtensions.burn-my-windows
-      gnomeExtensions.clipboard-indicator
       # gnomeExtensions.gesture-improvements # not yet compatible with gnome 45
       gnomeExtensions.gsconnect
       gnomeExtensions.just-perfection
@@ -53,7 +52,6 @@ in
         enabled-extensions = [
           "blur-my-shell@aunetx"
           "burn-my-windows@schneegans.github.com"
-          "clipboard-indicator@tudmotu.com"
           "drive-menu@gnome-shell-extensions.gcampax.github.com"
           "gsconnect@andyholmes.github.io"
           "just-perfection-desktop@just-perfection"
@@ -128,7 +126,6 @@ in
 
       # keybindings
       "org/gnome/shell/keybindings" = {
-        toggle-message-tray = [ "<Super>w" ]; # defaults to <Super>v, but i need that for the clipboard-indicator
         switch-to-workspace-left = ["<Super>Page_Up" "<Super>KP_Prior" "<Super><Alt>Left"];
         switch-to-workspace-right = ["<Super>Page_Down" "<Super>KP_Next" "<Super><Alt>Right"];
         show-screenshot-ui = ["<Shift>Print" "<Super><Shift>S"];
@@ -184,19 +181,6 @@ in
         fn-fullscreen = false;
         fn-maximized-snap = false;
         fn-move-snap = false;
-      };
-
-      "org/gnome/shell/extensions/clipboard-indicator" = {
-        move-item-first = true;
-        clear-on-boot = true;
-        confirm-clear = false;
-        enable-keybindings = true;
-        # this seems to be the only way to disable the keybindings individually
-        private-mode-binding = lib.gvariant.mkEmptyArray (lib.gvariant.type.string);
-        toggle-menu = [ "<Super>v" ];
-        clear-history = lib.gvariant.mkEmptyArray (lib.gvariant.type.string);
-        next-entry = lib.gvariant.mkEmptyArray (lib.gvariant.type.string);
-        prev-entry = lib.gvariant.mkEmptyArray (lib.gvariant.type.string);
       };
 
       # app settings
