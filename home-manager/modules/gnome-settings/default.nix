@@ -61,6 +61,8 @@ in
           "Vitals@CoreCoding.com"
           "wifiqrcode@glerro.pm.me"
           "windowgestures@extension.amarullz.com"
+          "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
+          "caffeine@patapon.info"
         ];
       };
 
@@ -99,7 +101,7 @@ in
       };
 
       "org/gnome/desktop/session" = {
-        idle-delay = lib.gvariant.mkUint32 300;
+        idle-delay = lib.gvariant.mkUint32 900;
       };
 
       "org/gnome/settings-daemon/plugins/power" = {

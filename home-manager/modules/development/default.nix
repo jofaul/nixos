@@ -28,6 +28,7 @@ in
       home.packages = with pkgs; [
         android-studio
         android-tools
+        dbeaver-bin # usually needed with android stuff
       ];
     })
     (lib.mkIf cfg.java {

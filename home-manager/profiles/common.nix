@@ -42,7 +42,11 @@
       zellij # tmux but cooler
     ];
 
-    programs.yazi.enable = true; # file manager but duck
+    # file manager but duck
+    programs.yazi = {
+      enable = true;
+      shellWrapperName = "y";
+    }; 
 
     # Let Home Manager install and manage itself.
     programs.home-manager.enable = true;
