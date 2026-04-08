@@ -19,5 +19,15 @@ in
   config = lib.mkIf cfg.enable {
     betternix.ssh.enable = true;
     betternix.packages.enable = true;
+    programs.git.includes = [
+      {
+        condition = "gitdir:~/source/";
+        contents = {
+          user.name = "Jonathan Faulkner";
+          user.email = "jf@bettertec-services.com";
+        };
+      }
+    ];
   };
+
 }
