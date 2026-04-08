@@ -71,22 +71,6 @@
 
       formatter = forAllSystems (system: nixpkgsFor.${system}.nixfmt); # TODO: change to "nixfmt" once it is replaced
 
-      packages = forAllSystems (
-        system:
-        let
-          pkgs = nixpkgsFor.${system};
-        in
-        {
-
-
-          build_outputs = pkgs.callPackage mayniklas.packages.${system}.build_outputs.override {
-            inherit self;
-            output_path = "~/.keep-nix-outputs-jofaul";
-          };
-
-        }
-      );
-
       # Output all modules in ./modules to flake. Modules should be in
       # individual subdirectories and contain a default.nix file
       nixosModules = builtins.listToAttrs (
