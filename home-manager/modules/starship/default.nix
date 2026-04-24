@@ -15,16 +15,7 @@ in
   config = lib.mkIf cfg.enable {
     programs.starship = {
       enable = true;
-      settings =
-        (builtins.fromTOML (
-          builtins.readFile (
-            pkgs.fetchurl {
-              url = "https://starship.rs/presets/toml/no-runtime-versions.toml";
-              hash = "sha256-1fiJrhe7UrfgLfaNzsQ5UDwZmn4Dcct8+lasvmIbzE8=";
-            }
-          )
-        ))
-        // {
+      settings = {
           hostname = {
             format = "[$hostname]($style) ";
           };
