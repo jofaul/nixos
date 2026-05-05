@@ -21,12 +21,8 @@
       };
     };
 
-    programs = {
-      firefox = {
-        enable = true;
-        package = (pkgs.wrapFirefox (pkgs.firefox-unwrapped.override { pipewireSupport = true; }) { });
-      };
-    };
+    # disable firefox, we have zen
+    programs.firefox.enable = false;
 
     # Install these packages for my user
     home.packages =
@@ -55,7 +51,6 @@
         tor-browser
         ungoogled-chromium
         karere
-        firefox
         # cooked ahh notation
         zen-browser.packages.${stdenv.hostPlatform.system}.default
       ]
