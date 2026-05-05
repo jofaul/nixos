@@ -2,6 +2,7 @@
   betternix,
   config,
   lib,
+  pkgs,
   ...
 }:
 let
@@ -34,6 +35,10 @@ in
       # home-manager wrongly thinks it doesn't manage (and thus shouldn't clobber) this file due to the activation script
       ".ssh/config".force = true;
     };
+
+    home.packages = [
+      pkgs.element-desktop
+    ];
 
     home.activation = {
       # https://github.com/nix-community/home-manager/issues/322
