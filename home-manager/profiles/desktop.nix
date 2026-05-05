@@ -54,7 +54,7 @@
         thunderbird-bin
         tor-browser
         ungoogled-chromium
-        wasistlos
+        karere
         firefox
         # cooked ahh notation
         zen-browser.packages.${stdenv.hostPlatform.system}.default
