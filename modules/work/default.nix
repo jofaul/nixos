@@ -24,8 +24,8 @@ in
     betternix = {
       hosts.enable = true;
       java.enable = true;
-      # postgresql.enable = true;
-      # rabbitmq.enable = true;
+      postgresql.enable = true;
+      rabbitmq.enable = true;
       trusted-certificates.enable = true;
     };
 
