@@ -21,9 +21,10 @@ in
         ".idea/"
       ];
       settings = {
-        pull.rebase = false;
+        pull.rebase = true;
         user.email = "54673768+jofaul@users.noreply.github.com";
         user.name = "jofaul";
+        init.defaultBranch = "main";
       };
     };
 
