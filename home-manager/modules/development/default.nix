@@ -34,7 +34,7 @@ in
     (lib.mkIf cfg.java {
       home.packages = with pkgs; [
         jetbrains.idea
-        jdk21_headless
+        jdk25_headless
       ];
     })
     (lib.mkIf cfg.python {
