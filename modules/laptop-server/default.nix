@@ -22,7 +22,7 @@ in
       HandleLidSwitch = "ignore";
       HandleLidSwitchExternalPower = "ignore";
       HandleLidSwitchDocked = "ignore";
-    }; 
+    };
 
     services.tailscale = {
       enable = true;
@@ -31,6 +31,6 @@ in
         "--advertise-exit-node"
       ];
     };
-      
+
   };
 }
