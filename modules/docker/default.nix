@@ -22,6 +22,10 @@ in
         dates = "weekly";
         flags = [ "--all" ];
       };
+
+      daemon.settings = {
+        dns = [ "1.1.1.1" "8.8.8.8" ];
+      };
     };
 
     virtualisation.oci-containers = {

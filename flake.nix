@@ -9,8 +9,7 @@
     # Give me the unstable packages!!
     # https://github.com/NixOS/nixpkgs
     nixpkgs.url = "git+https://github.com/NixOS/nixpkgs?ref=nixos-unstable&shallow=1";
-
-
+    
     # A collection of NixOS modules covering hardware quirks.
     # https://github.com/NixOS/nixos-hardware
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
@@ -69,7 +68,7 @@
     in
     {
 
-      formatter = forAllSystems (system: nixpkgsFor.${system}.nixfmt); # TODO: change to "nixfmt" once it is replaced
+      formatter = forAllSystems (system: nixpkgsFor.${system}.nixfmt); 
 
       # Output all modules in ./modules to flake. Modules should be in
       # individual subdirectories and contain a default.nix file
