@@ -23,5 +23,16 @@ in
       HandleLidSwitchExternalPower = "ignore";
       HandleLidSwitchDocked = "ignore";
     }; 
+
+    services.tailscale = {
+      enable = true;
+      useRoutingFeatures = "server";
+      extraUpFlags = [
+        "--advertise-exit-node"
+      ];
+    };
+      
+    networking.firewall.interfaces."tailscale0".allowedTCPPorts = [ 22 ];
+    
   };
 }
