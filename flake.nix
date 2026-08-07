@@ -68,7 +68,7 @@
     in
     {
 
-      formatter = forAllSystems (system: nixpkgsFor.${system}.nixfmt); 
+      formatter = forAllSystems (system: nixpkgsFor.${system}.nixfmt-tree); 
 
       # Output all modules in ./modules to flake. Modules should be in
       # individual subdirectories and contain a default.nix file
