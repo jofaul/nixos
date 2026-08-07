@@ -9,7 +9,7 @@
       programs.direnv.enable = true;
       programs.git.enable = true;
       programs.zsh.enable = true;
-      
+
       nixpkgs-config.enable = true;
 
       ssh.enable = true;
@@ -46,7 +46,7 @@
     programs.yazi = {
       enable = true;
       shellWrapperName = "y";
-    }; 
+    };
 
     # Let Home Manager install and manage itself.
     programs.home-manager.enable = true;

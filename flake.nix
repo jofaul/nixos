@@ -3,13 +3,13 @@
   description = "My first flake!";
 
   inputs = {
-  
+
     ### Essentials
 
     # Give me the unstable packages!!
     # https://github.com/NixOS/nixpkgs
     nixpkgs.url = "git+https://github.com/NixOS/nixpkgs?ref=nixos-unstable&shallow=1";
-    
+
     # A collection of NixOS modules covering hardware quirks.
     # https://github.com/NixOS/nixos-hardware
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
@@ -67,8 +67,7 @@
       );
     in
     {
-
-      formatter = forAllSystems (system: nixpkgsFor.${system}.nixfmt-tree); 
+      formatter = forAllSystems (system: nixpkgsFor.${system}.nixfmt-tree);
 
       # Output all modules in ./modules to flake. Modules should be in
       # individual subdirectories and contain a default.nix file
@@ -93,7 +92,8 @@
             # allows to only pass what is needed to each module.
             specialArgs = {
               flake-self = self;
-            } // inputs;
+            }
+            // inputs;
 
             modules = [
               (import "${./.}/machines/${x}/configuration.nix" { inherit self; })
@@ -116,7 +116,8 @@
             imports = [
               ./home-manager/profiles/common.nix
               ./home-manager/profiles/desktop.nix
-            ] ++ (builtins.attrValues self.homeManagerModules);
+            ]
+            ++ (builtins.attrValues self.homeManagerModules);
           };
         server =
           {
@@ -129,7 +130,8 @@
             imports = [
               ./home-manager/profiles/common.nix
               ./home-manager/profiles/server.nix
-            ] ++ (builtins.attrValues self.homeManagerModules);
+            ]
+            ++ (builtins.attrValues self.homeManagerModules);
           };
       };
 

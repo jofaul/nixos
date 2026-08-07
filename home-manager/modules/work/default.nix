@@ -29,7 +29,7 @@ in
         };
       }
     ];
-  
+
     # fix for git config issue in idea programs
     home.file = {
       # home-manager wrongly thinks it doesn't manage (and thus shouldn't clobber) this file due to the activation script

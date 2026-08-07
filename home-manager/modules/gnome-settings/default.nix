@@ -128,9 +128,20 @@ in
 
       # keybindings
       "org/gnome/shell/keybindings" = {
-        switch-to-workspace-left = ["<Super>Page_Up" "<Super>KP_Prior" "<Super><Alt>Left"];
-        switch-to-workspace-right = ["<Super>Page_Down" "<Super>KP_Next" "<Super><Alt>Right"];
-        show-screenshot-ui = ["<Shift>Print" "<Super><Shift>S"];
+        switch-to-workspace-left = [
+          "<Super>Page_Up"
+          "<Super>KP_Prior"
+          "<Super><Alt>Left"
+        ];
+        switch-to-workspace-right = [
+          "<Super>Page_Down"
+          "<Super>KP_Next"
+          "<Super><Alt>Right"
+        ];
+        show-screenshot-ui = [
+          "<Shift>Print"
+          "<Super><Shift>S"
+        ];
       };
 
       # extension settings
