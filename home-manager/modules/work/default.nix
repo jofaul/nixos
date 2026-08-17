@@ -18,8 +18,11 @@ in
   };
 
   config = lib.mkIf cfg.enable {
-    betternix.ssh.enable = true;
-    betternix.packages.enable = true;
+    betternix = {
+      ssh.enable = true;
+      packages.enable = true;
+    };
+    
     programs.git.includes = [
       {
         condition = "gitdir:~/source/";
