@@ -13,6 +13,7 @@
       nixpkgs-config.enable = true;
 
       ssh.enable = true;
+      nix-index.enable = true;
     };
 
     # Home-manager nixpkgs config
