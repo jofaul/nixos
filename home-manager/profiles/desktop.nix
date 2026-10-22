@@ -26,7 +26,7 @@
 
     # Install these packages for my user
     home.packages = with pkgs; [
-      audacity
+      # audacity
       discord
       gnome-graphs # plot data
       gparted # disk stuff manager
