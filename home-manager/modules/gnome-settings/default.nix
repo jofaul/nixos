@@ -23,7 +23,6 @@ in
       gnomeExtensions.tailscale-qs
       gnomeExtensions.vitals
       gnomeExtensions.wifi-qrcode
-      gnomeExtensions.window-gestures
     ];
 
     gtk = {
