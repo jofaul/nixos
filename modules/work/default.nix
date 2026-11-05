@@ -25,7 +25,6 @@ in
       hosts.enable = true;
       java.enable = true;
       postgresql.enable = true;
-      rabbitmq.enable = true;
       trusted-certificates.enable = true;
       azure-vpn.enable = true;
       username = "jonathan";
