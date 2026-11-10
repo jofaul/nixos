@@ -31,7 +31,7 @@ in
     };
 
     environment.systemPackages = with pkgs; [
-      subversion
+      keystore-explorer
     ];
 
     environment.variables = {
