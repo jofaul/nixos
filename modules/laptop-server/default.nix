@@ -13,6 +13,10 @@ in
 
   config = lib.mkIf cfg.enable {
 
+    jofaul = {
+      common-server.enable = true;
+    };
+
     services.logind.settings.Login = {
       # Do not suspend when the lid is closed.
       HandleLidSwitch = "ignore";
