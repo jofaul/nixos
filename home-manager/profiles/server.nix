@@ -8,9 +8,6 @@
       programs.gnome-settings.enable = true;
       programs.vscode.enable = true;
       programs.ghostty.enable = true;
-
-      docker.enable = true;
-      homeassistant.enable = true;
     };
 
     services.tailscale = {

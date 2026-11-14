@@ -15,6 +15,7 @@
 
     gnome.enable = true;
     docker.enable = true;
+    homeassistant.enable = true;
   };
 
   imports = [
