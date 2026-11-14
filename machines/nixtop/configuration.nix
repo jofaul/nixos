@@ -14,6 +14,7 @@
     laptop-server.enable = true;
 
     gnome.enable = true;
+    docker.enable = true;
   };
 
   imports = [

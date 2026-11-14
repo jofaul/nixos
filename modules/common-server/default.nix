@@ -22,8 +22,6 @@ in
       common.enable = true;
       fonts.enable = true;
       locale.hardwareClockInLocalTime = true;
-        
-      docker.enable = true;
     };
 
     home-manager = {
