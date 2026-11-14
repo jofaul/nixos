@@ -22,7 +22,14 @@ in
       HandleLidSwitch = "ignore";
       HandleLidSwitchExternalPower = "ignore";
       HandleLidSwitchDocked = "ignore";
+
+      # Ignore power keys etc.
+      HandlePowerKey = "ignore";
+      HandleSuspendKey = "ignore";
+      HandleHibernateKey = "ignore";
     };
 
+    # Disable sleep
+    systemd.targets.sleep.enable = false;
   };
 }
