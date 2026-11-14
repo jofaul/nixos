@@ -24,6 +24,14 @@ in
       locale.hardwareClockInLocalTime = true;
     };
 
+    services.tailscale = {
+      enable = true;
+      useRoutingFeatures = "server";
+      extraUpFlags = [
+        "--advertise-exit-node"
+      ];
+    };
+
     home-manager = {
       # DON'T set useGlobalPackages! It's not necessary in newer
       # home-manager versions and does not work with configs using

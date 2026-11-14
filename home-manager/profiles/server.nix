@@ -10,14 +10,6 @@
       programs.ghostty.enable = true;
     };
 
-    services.tailscale = {
-      enable = true;
-      useRoutingFeatures = "server";
-      extraUpFlags = [
-        "--advertise-exit-node"
-      ];
-    };
-
     home.packages = with pkgs; [
       gparted 
       obsidian
