@@ -15,8 +15,11 @@ in
 
   config = lib.mkIf cfg.enable {
     virtualisation.oci-containers = {
+      
       backend = "docker";
+
       containers.homeassistant = {
+        dependsOn = [ "matter-server" ];
         image = "ghcr.io/home-assistant/home-assistant:stable";
         volumes = [
           "home-assistant:/config"
