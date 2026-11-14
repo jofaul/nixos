@@ -8,28 +8,16 @@ let
 in
 {
   options.jofaul.laptop-server = {
-    enable = lib.mkEnableOption "contains configuration for my server, mainly homeassistant";
+    enable = lib.mkEnableOption "keeps the laptop awake with lid closed";
   };
 
   config = lib.mkIf cfg.enable {
-    jofaul = {
-      docker.enable = true;
-      homeassistant.enable = true;
-    };
 
     services.logind.settings.Login = {
       # Do not suspend when the lid is closed.
       HandleLidSwitch = "ignore";
       HandleLidSwitchExternalPower = "ignore";
       HandleLidSwitchDocked = "ignore";
-    };
-
-    services.tailscale = {
-      enable = true;
-      useRoutingFeatures = "server";
-      extraUpFlags = [
-        "--advertise-exit-node"
-      ];
     };
 
   };

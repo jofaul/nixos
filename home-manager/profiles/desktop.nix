@@ -26,7 +26,6 @@
 
     # Install these packages for my user
     home.packages = with pkgs; [
-      # audacity
       discord
       gnome-graphs # plot data
       gparted # disk stuff manager
@@ -34,8 +33,6 @@
       jellyfin-mpv-shim
       krita # painting (gimp?)
       libreoffice
-      # mattermost-desktop # some coding shit that i dont know a server for
-      # mixxx # dj app
       mpv
       obsidian
       oneko # very important

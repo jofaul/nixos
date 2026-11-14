@@ -12,10 +12,11 @@
 {
   jofaul = {
     common-desktop.enable = true;
+    server.enable = true;
+    laptop-server.enable = true;
+    
     gnome.enable = true;
     docker.enable = true;
-    gaming.enable = true;
-    laptop-server.enable = true;
   };
 
   imports = [
