@@ -19,7 +19,6 @@ in
       backend = "docker";
 
       containers.homeassistant = {
-        dependsOn = [ "matter-server" ];
         image = "ghcr.io/home-assistant/home-assistant:stable";
         volumes = [
           "home-assistant:/config"
@@ -32,6 +31,8 @@ in
       };
 
       containers.matter-server = {
+        dependsOn = [ "homeassistant" ];
+
         image = "ghcr.io/home-assistant-libs/python-matter-server:stable";
         volumes = [
           "matter-server-data:/data"
