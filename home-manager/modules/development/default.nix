@@ -32,9 +32,20 @@ in
       ];
     })
     (lib.mkIf cfg.java {
+      environment.etc = {
+        "dev/jdk_25".source = "${pkgs.jdk25}/lib/openjdk";
+        "dev/maven".source = "${pkgs.maven}/maven";
+        "dev/gradle_9".source = gradle_9;
+      };
+
+      environment.systemPackages = with pkgs; [
+        jdk25
+        maven
+        gradle_9
+      ];
+
       home.packages = with pkgs; [
         jetbrains.idea
-        jdk25_headless
       ];
     })
     (lib.mkIf cfg.python {
