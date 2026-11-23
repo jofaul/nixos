@@ -41,7 +41,6 @@ in
 
     home.packages = [
       pkgs.element-desktop
-      pkgs.claude-code
     ];
 
     home.activation = {

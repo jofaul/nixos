@@ -18,6 +18,7 @@
         android = true;
         java = true;
         python = true;
+        vibecoding = true;
       };
     };
 

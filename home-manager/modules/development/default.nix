@@ -10,13 +10,9 @@ in
 {
   options.jofaul.programs.development = {
     android = lib.mkEnableOption "enable Android";
-    c_cpp = lib.mkEnableOption "enable C/C++";
-    go = lib.mkEnableOption "enable Go";
-    godot = lib.mkEnableOption "enable Godot";
     java = lib.mkEnableOption "enable Java";
-    javascript = lib.mkEnableOption "enable JavaScript";
-    lua = lib.mkEnableOption "enable Lua";
     python = lib.mkEnableOption "enable Python";
+    vibecoding = lib.mkEnableOption "enable Vibecoding";
   };
 
   config = lib.mkMerge [
@@ -57,6 +53,13 @@ in
             jupyter
           ]
         ))
+      ];
+    })
+    (lib.mkIf cfg.vibecoding {
+      home.packages = with pkgs; [
+        claude-code
+        claude-agent-acp
+        mistral-vibe
       ];
     })
   ];
